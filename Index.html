@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="Styll.css"/>
+	<script>
+	function sendMessage (message)
+	{
+		
+		var messages = document.getElementById('chatmessages');
+		messages.innerHTML = messages.innerHTML + message + '<br/>';
+		document.getElementById('chatmessage').value = "";
+		
+	}
+	
+	
+	
+	</script>
+	
+	
+	
+	
+</head>
+
+
+<body>
+
+	<p class= "Christmas"> Boston Celtics <br/>
+		NBA <br/>
+		17 NBA Championships
+	
+	</p>	
+	
+	
+	
+	<Input id="message" type="text"/>
+	<Input id="Login" type="submit" value="" onclick="alert('Hey, ' + document.getElementById('message').value)"/>
+	<br/>
+	<Input id="chatmessage" type="text"/>
+	<Input id="send" type="submit" value="send" onclick="sendMessage(document.getElementById('chatmessage').value)"/>
+	
+	<div id="chatmessages">
+	</div>
+	
+</body>	
+
+	
+</html>
